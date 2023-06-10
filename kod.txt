@@ -1,0 +1,10 @@
+W powyższym kodzie funkcja minHash przyjmuje łańcuch L oraz listę hash_functions, która zawiera k funkcji haszujących. Każda funkcja haszująca powinna przyjmować wartość x i zwracać wartość hasza dla tej wartości.
+
+Następnie tworzona jest lista min_values, która inicjalnie zawiera wartość nieskończoności (float('inf')) dla każdej funkcji haszującej.
+
+Następnie iterujemy przez każdy element x z łańcucha L i dla każdej funkcji haszującej obliczamy wartość hasza hash_value. Następnie aktualizujemy min_values[i] dla odpowiedniego indeksu i, jeśli hash_value jest mniejsze od bieżącej wartości min_values[i].
+
+Na koniec zwracamy listę min_values, która zawiera minimalne wartości haszy dla każdej funkcji haszującej.
+
+W przykładzie użyto dwóch prostych funkcji haszujących: hash_func1, która używa wbudowanej funkcji hash() do haszowania łańcucha, oraz hash_func2, która dodaje sufiks "abc" do łańcucha przed haszowaniem.
+
